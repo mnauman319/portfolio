@@ -1,6 +1,12 @@
-<div class="app-html">
+<!-- <div class="app-html">
     <app-nav></app-nav>
 </div>
 <div class="app-html">
     <router-outlet></router-outlet>
-</div>
+</div> -->
+
+
+<mat-sidenav-container class="example-container" style="min-height: 100%;">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened"><app-nav></app-nav></mat-sidenav>
+    <mat-sidenav-content (click)="sidenav.toggle()"><router-outlet></router-outlet></mat-sidenav-content>
+</mat-sidenav-container>
