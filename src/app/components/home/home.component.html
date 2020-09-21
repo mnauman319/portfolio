@@ -1,2 +1,21 @@
 <div class="container">
+
+    <div class="content-container">
+        <div class="header">
+            <div style="font-size: 35px; width: 100%; ">
+                Mark Nauman
+            </div>
+            <div>
+                Software Developer
+            </div>
+            <div>
+                <a href="https://github.com/mnauman319"><img src="../../../assets/GitHub-Mark-32px.png"></a>
+                <a href="https://www.linkedin.com/in/mark-nauman-999700138"><img src="../../../assets/icons8-linkedin-32.png"></a>
+                <a href="../../../assets/Mark-Nauman-Resume.pdf"><img src="../../../assets/icons8-download-resume-32.png" (mouseenter)="showResume = true" (mouseleave)="showResume = false"></a>
+                <a href="https://www.linkedin.com/in/mark-nauman-999700138"><img src="../../../assets/icons8-linkedin-32.png"></a>
+                <p *ngIf="showResume">Show Resume</p>
+            </div>
+        </div>
+    </div>
+
 </div>

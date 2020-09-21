@@ -4,7 +4,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatIconModule} from '@angular/material/icon';
 import { AppComponent } from './app.component';
 import { ApplicationsComponent } from './components/applications/applications.component';
 import { HomeComponent } from './components/home/home.component';
@@ -25,7 +25,8 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
     AppRoutingModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
