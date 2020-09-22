@@ -2,18 +2,20 @@
 
     <div class="content-container">
         <div class="header">
-            <div style="font-size: 35px; width: 100%; ">
+            <div style="width: 100%; font-size: 2vw">
                 Mark Nauman
             </div>
-            <div>
+            <div style="width: 80%;font-size: 0.9vw">
                 Software Developer
             </div>
             <div>
                 <a href="https://github.com/mnauman319"><img src="../../../assets/GitHub-Mark-32px.png"></a>
                 <a href="https://www.linkedin.com/in/mark-nauman-999700138"><img src="../../../assets/icons8-linkedin-32.png"></a>
                 <a href="../../../assets/Mark-Nauman-Resume.pdf"><img src="../../../assets/icons8-download-resume-32.png" (mouseenter)="showResume = true" (mouseleave)="showResume = false"></a>
-                <a href="https://www.linkedin.com/in/mark-nauman-999700138"><img src="../../../assets/icons8-linkedin-32.png"></a>
-                <p *ngIf="showResume">Show Resume</p>
+                <a href="https://www.codewars.com/users/mnauman"><img src="../../../assets/codewars_logo_icon_145389.png"></a>
+                <a href="/apps" (mouseenter)="showApplication = true" (mouseleave)="showApplication = false"><img src="../../../assets/edit-app-widget-grid-512.png" alt=""></a>
+                <p *ngIf="showResume">Resume</p>
+                <p *ngIf="showApplication">Applications</p>
             </div>
         </div>
     </div>

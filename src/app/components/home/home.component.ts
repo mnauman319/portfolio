@@ -8,6 +8,7 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
   showResume:boolean = false;
+  showApplication:boolean = false;
   ngOnInit(): void {
   }
 }
