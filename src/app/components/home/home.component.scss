@@ -1,4 +1,5 @@
 .container{
+    position: relative;
     background-image: url('https://i.pinimg.com/originals/95/ee/86/95ee8696f8ed1abb3767928c4d0daf65.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -7,6 +8,9 @@
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+
 }
 
 .content-container{

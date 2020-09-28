@@ -1,6 +1,28 @@
-<mat-tab-group class="tab-group" animationDuration="1000ms">
-    <mat-tab label="Snapgram"><iframe src="http://snapgramfront.s3.us-east-2.amazonaws.com/index.html" frameborder="0" class="app"></iframe></mat-tab>
-    <mat-tab label="Reimbursement System"><iframe src="http://reimbursementfront.s3.us-east-2.amazonaws.com/index.html" frameborder="0" class="app"></iframe></mat-tab>
-</mat-tab-group>
+<div class="container">
+    <div (mouseenter)="showImgDetail($event)" (mouseleave)="showImgDetail($event)" id="snapgram">
+        <img src="../../../assets/SnapgramImg.PNG" alt="Snapgram">
+        <div id="snapgram-container">
+            <a href="http://snapgramfront.s3.us-east-2.amazonaws.com/index.html">Demo</a>
+            <a href="https://github.com/mnauman319/SnapgramFrontendPersonal">Source Code</a>
+        </div>
+        
+    </div>
+    <div (mouseenter)="showImgDetail($event)" (mouseleave)="showImgDetail($event)" id="reimbursement">
+        <img src="../../../assets/ReimbursementImg.PNG" alt="Reimbursement System">
+        <div id="reimbursement-container">
+            <a href="http://reimbursementfront.s3.us-east-2.amazonaws.com/index.html">Demo</a>
+            <a href="https://github.com/mnauman319/ReimbursementFrontend">Source Code</a>
+        </div>
+    </div>
+    <div (mouseenter)="showImgDetail($event)" (mouseleave)="showImgDetail($event)" id="bank">
+        <img src="" alt="Bank">
+        <div id="bank-container">
+            <a href="http://snapgramfront.s3.us-east-2.amazonaws.com/index.html">Demo</a>
+            <a href="https://github.com/mnauman319/SnapgramFrontendPersonal">Source Code</a>
+        </div>
+    </div>
+</div>
+    <!-- <iframe src="http://snapgramfront.s3.us-east-2.amazonaws.com/index.html" frameborder="0" class="app"></iframe>
+    <iframe src="http://reimbursementfront.s3.us-east-2.amazonaws.com/index.html" frameborder="0" class="app"></iframe> -->
 
 
