@@ -2,22 +2,22 @@
 
     <div class="content-container">
         <div class="header">
-            <div style="width: 100%; font-size: 2vw">
+            <div style="font-size: 2vw">
                 Mark Nauman
             </div>
-            <div style="width: 80%;font-size: 0.9vw">
+            <div style="font-size: 0.9vw">
                 Software Developer
             </div>
-            <div>
-                <a href="https://github.com/mnauman319"><img src="../../../assets/GitHub-Mark-32px.png"></a>
-                <a href="https://www.linkedin.com/in/mark-nauman-999700138"><img src="../../../assets/icons8-linkedin-32.png"></a>
-                <a href="../../../assets/Mark-Nauman-Resume.pdf"><img src="../../../assets/icons8-download-resume-32.png" (mouseenter)="showResume = true" (mouseleave)="showResume = false"></a>
-                <a href="https://www.codewars.com/users/mnauman"><img src="../../../assets/codewars_logo_icon_145389.png"></a>
-                <a href="/apps" (mouseenter)="showApplication = true" (mouseleave)="showApplication = false"><img src="../../../assets/edit-app-widget-grid-512.png" alt=""></a>
-                <p *ngIf="showResume">Resume</p>
-                <p *ngIf="showApplication">Applications</p>
-            </div>
+        </div>
+        <div id="a-container">
+            <a href="https://github.com/mnauman319"><div id="img-container" (hover)="!visibiltyMap.get('github')"><div *ngIf="visibiltyMap.get('github')"><p>Github</p></div><img src="../../../assets/GitHub-Mark-32px.png"></div></a>
+            <a href="https://www.linkedin.com/in/mark-nauman-999700138"><div id="img-container"><div><p>Linkedin</p></div><img src="../../../assets/icons8-linkedin-32.png"></div></a>
+            <a href="../../../assets/Mark-Nauman-Resume.pdf"><div id="img-container"><div><p>Resume</p></div><img src="../../../assets/icons8-download-resume-32.png"></div></a>
+            <a href="https://www.codewars.com/users/mnauman"><div id="img-container"><div><p>Codewars</p></div><img src="../../../assets/codewars_logo_icon_145389.png"></div></a>
+            <!-- <a href="/apps"><div id="img-container"><div><p>Applications</p></div><img src="../../../assets/edit-app-widget-grid-512.png" alt=""></div></a> -->
         </div>
     </div>
-
+    <app-applications></app-applications>
+    
 </div>
+
